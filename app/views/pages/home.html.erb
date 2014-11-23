@@ -1,16 +1,19 @@
 
-   
+<% if user_signed_in? %>
+   <h1> You're logged in! </h1>
+   <% else %>
 
-<div class="jumbotron">
-	
-   <h1>Welcome to One Month Rails! :) </h1>
-     You've found the home page for the 
-     <%= link_to "One Month Rails", "http://onemonthraills.com" %>
-     application.
-  
-    <p><a class="btn btn-primary btn-lg" href="#" role="button"> 
-	Sign Up Now!
-    </a>
-   </p>
+		<div class="jumbotron">
+			
+		   <h1>Buy,Sell and Trade your Games!</h1>
+		     You've found the home page for the 
+		     <%= link_to "Game Trading", "http://onemonthraills.com" %>
+		     application.
+		  
+		    <p>
+		     <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+		    	
+		    </p>
 
-</div>
+		</div>
+<% end %>
