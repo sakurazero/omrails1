@@ -2,10 +2,13 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+  	<div class="col-sm-6 col-sm-offset-2">
     <%= f.input :description, as: :text, input_html: { rows: "3"}  %>
+</div>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+
+  <div class="form-actions well">
+    <%= f.button :submit, class: "btn btn-primary" %>
   </div>
 <% end %>
