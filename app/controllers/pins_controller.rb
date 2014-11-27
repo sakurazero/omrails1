@@ -5,7 +5,7 @@
   respond_to :html
 
   def index
-    @pins = Pin.all
+    @pins = Pin.order("created_at desc")
     respond_with(@pins)
   end
 
