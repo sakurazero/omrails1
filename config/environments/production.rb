@@ -80,7 +80,7 @@ Rails.application.configure do
 config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
-    :bucket => 'gametrade'
+    :bucket => 'gametrade',
     :access_key_id => 'AKIAI5OT76QWVGCTOFCQ',
     :secret_access_key => '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'
   }
