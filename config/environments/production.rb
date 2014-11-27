@@ -75,4 +75,14 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Paperclip should use Amazon S3 on Heroku
+config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => 'gametrade'
+    :access_key_id => 'AKIAI5OT76QWVGCTOFCQ',
+    :secret_access_key => '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'
+  }
+}
 end
